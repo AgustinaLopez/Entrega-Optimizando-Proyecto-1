@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- wow js -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Mi CSS -->  
+
+    <title>¡Armamos tu Paquete Disney!</title>
+    <link rel="shortcut icon" href="img/favicon.png">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top botonera">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="" alt="">
+          </a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Hoteles</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Experiencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+    <!-- Inicia Header tipo Carousel (VER SI CARROUSEL O NO)-->
+
+     
+    <!-- Fin Header tipo Carousel -->
+    
+
+    <main>   
+        <h1>Cotizamos y armamos tu viaje a los parques de Walt Disney World a tu gusto!</h1>
+        
+        <div id="personalizado">
+            <p>Hola Amigos! ¿Preparados para la aventura?</p>
+        </div>
+
+
+
+        <!-- Seleccion de Fechas -->
+        <section class="formularioBusqueda">
+            <div class="container bg-form col-xl-12 col-sm-12"> 
+                <form class="row d-flex justify-content-center align-content-center">         
+                    <div class=" col-xl-4 col-sm-6">                                
+                            <label for="Llegada">Llegada</label>
+                            <input class="form-control form-control-sm" type="date" name="llegada" id="llegada">   
+                    </div>                        
+                    <div class=" col-xl-4 col-sm-6">                                
+                        <label for="salida">Salida</label>
+                        <input class="form-control form-control-sm" type="date" name="salida" id="salida"> 
+                    </div>
+                    <div class="form-row form-group flex-column align-items-center align-self-center col-xl-2 col-sm-6">                                
+                        <label for="guests">Cantidad de Personas</label>
+                        <select name="guests" id="pasajeros" class="form-control-sm" required></select>
+                    </div>
+                    <div class="align-self-center col-xl-1 col-sm-6">
+                      <a href="#"><button id="botonFecha" type="button" class="btn btn-success btn-sm">Buscar</button></a>   
+                    </div>
+                </form>
+            </div>
+        </section>
+        <!-- Fin seleccion de Fechas -->
+        
+        <!--Filtro para buscar Hoteles --> 
+
+        <!--Hoteles -->
+        <script src="main.js"></script>
+      
+
+        <!-- Formulario Consulta -->
+        <div>
+            <h3> Si tenes más dudas sobre tu viaje podés comunicarte con nosotras llenando este formulario</h3> 
+            <div id="formularioConsulta" class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Tu Nombre</label>
+                <input type="name" class="form-control" id="nombre" placeholder="Escribe Tu nombre aquí">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="correo" placeholder="Escribe Tu correo electronico aquí">
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button id="boton2" class="btn"> Enviar </button> 
+            </div>
+        </div>
+        <!-- Formulario Consulta -->
+   </main> 
+
+   <footer>
+        <section>
+            <form action="envio.php" id="newsletter"></form>
+            <fieldset class="pieNewsletter">
+                <legend class="newsletterEditado">Sumate a nuestro newsletter</legend>
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" placeholder="Tu correo electronico aqui">
+            </fieldset> 
+        </section>
+    
+        <section>
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="img/instagram.png" alt="Nuestro Instagram">
+            </a>
+            <a href="https://whatsapp.com/" target="_blank">
+            <img src="img/whatsapp.png" alt="Nuestro whatsapp">
+            </a>
+        </section>
+   </footer>
+
+   
+ <script src="js/wow.min.js"></script>
+ <script>
+    new WOW().init();
+ </script>
+
+ <!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!--<script src="main.js"></script>-->
+</body>
+</html>
